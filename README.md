@@ -6,9 +6,13 @@ NoteTaker is a modern, cross-platform desktop application built with **Electron 
 
 ## Features
 
-- **Create Notes**: Add notes with a title and content using an intuitive input form.
-- **Delete Notes**: Remove notes with a single click, updating the UI and storage.
-- **Responsive UI**: A modern, card-based interface with hover effects and animations, built with Tailwind CSS.
+- **Create and Edit Notes**: Add or modify notes with a title, content, and category.
+- **Note Categories**: Assign categories (e.g., Work, Personal) to organize notes.
+- **Search Notes**: Filter notes by title or content using a search bar.
+- **Dark Mode**: Toggle between light and dark themes, with preferences saved locally.
+- **Markdown Support**: Format note content with Markdown, rendered as HTML.
+- **Persistent Storage**: Save notes in a `notes.json` file in the user's data directory.
+- **Responsive UI**: A modern, card-based interface with hover effects and animations.
 - **Secure Design**: Implements Content Security Policy (CSP), `contextIsolation`, and `nodeIntegration: false`.
 - **Cross-Platform**: Runs on Windows, macOS, and Linux.
 - **Debugging Support**: Includes console logging and DevTools for troubleshooting.
@@ -23,23 +27,23 @@ NoteTaker is a modern, cross-platform desktop application built with **Electron 
 
 ## Project Structure
 
-```
+```markdown
 note-taker/
 ├── .github/
-│   └── ISSUE_TEMPLATE/
-│       ├── bug_report.md      # Template for bug reports
-│       └── feature_request.md # Template for feature requests
-├── index.html                # Main HTML file with UI structure
-├── main.js                   # Electron main process (app logic, file system, IPC)
-├── preload.js                # Preload script for secure IPC communication
-├── renderer.js               # Renderer process for UI interactions
-├── styles.css                # Custom CSS for animations and hover effects
-├── package.json              # Project metadata and dependencies
-├── notes.json                # (Generated) Stores notes in userData directory
-├── README.md                 # Project overview and instructions
-├── CONTRIBUTING.md           # Guidelines for contributing
-├── LICENSE                   # MIT License
-└── .gitignore                # Git ignore rules
+│ └── ISSUE_TEMPLATE/
+│ ├── bug_report.md # Template for bug reports
+│ └── feature_request.md # Template for feature requests
+├── index.html # Main HTML file with UI structure
+├── main.js # Electron main process (app logic, file system, IPC)
+├── preload.js # Preload script for secure IPC communication
+├── renderer.js # Renderer process for UI interactions
+├── styles.css # Custom CSS for animations and hover effects
+├── package.json # Project metadata and dependencies
+├── notes.json # (Generated) Stores notes in userData directory
+├── README.md # Project overview and instructions
+├── CONTRIBUTING.md # Guidelines for contributing
+├── LICENSE # MIT License
+└── .gitignore # Git ignore rules
 ```
 
 ## Setup Instructions

@@ -1,6 +1,4 @@
 /* Custom styles for NoteTaker */
-
-/* Note card hover effect */
 .note-card {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
@@ -10,12 +8,11 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* Delete button hover effect */
-.delete-btn {
+.delete-btn,
+.edit-btn {
   transition: background-color 0.2s ease-in-out;
 }
 
-/* Fade-in animation for notes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -30,4 +27,35 @@
 
 .note-card {
   animation: fadeIn 0.3s ease-in-out;
+}
+
+.dark .note-card {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.markdown-content {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content p {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content a {
+  color: #4f46e5;
+  text-decoration: underline;
 }
