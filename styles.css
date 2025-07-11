@@ -1,0 +1,33 @@
+/* Custom styles for NoteTaker */
+
+/* Note card hover effect */
+.note-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Delete button hover effect */
+.delete-btn {
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Fade-in animation for notes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.note-card {
+  animation: fadeIn 0.3s ease-in-out;
+}
